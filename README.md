@@ -43,7 +43,7 @@ AWS Components:
 - `AWS SAM Template Specifications` - where you write properties to a file (just like serverless.yml all the metadata needed for the lambda functions to work) to describe functions, APIs, permissions, timeouts etc.
 - `AWS SAM CLI` - invoke packages, deploy, view, run the applications locally, and test them
   
-Benefits: 
+Benefits:
 
 - `single deployment configuration` - AKA deply the whole stack as a single entity. It all comes packaged together when pushed to the cloud or run locally
 - `Extention of AWS CloudFormation` - connection with how it is all packaged up, using what AWS cloud already has, not re-inventing the wheel
@@ -54,3 +54,17 @@ Benefits:
 ---
 
 ## Building a Basic SAM Hello World App
+
+- use AWS CLI and SAM CLI to create a serverless project
+- Run, test it locally
+- Deploy to AWS Cloud
+- Create same app using AWS Toolkit
+- Run it, test it locally
+- Deploy it to AWS Cloud and test it there too
+
+### What the App will do:
+
+creating a simple API using `API Gateway` for the endpoint and `AWS Lambda Function`
+
+- so when send `GET` request to `API Gateway endpoint`, the `Lambda function` is invoked, and then the lambda function will `return` a message
+  
