@@ -62,7 +62,7 @@ Benefits:
 - Run it, test it locally
 - Deploy it to AWS Cloud and test it there too
 
-### What the App will do:
+### What the App will do
 
 creating a simple API using `API Gateway` for the endpoint and `AWS Lambda Function`
 
@@ -72,32 +72,32 @@ creating a simple API using `API Gateway` for the endpoint and `AWS Lambda Funct
 Last login: Fri Aug 12 11:56:04 on ttys001
 albamolina@Albas-Air ~ % sam init
 
-	SAM CLI now collects telemetry to better understand customer needs.
+ SAM CLI now collects telemetry to better understand customer needs.
 
-	You can OPT OUT and disable telemetry collection by setting the
-	environment variable SAM_CLI_TELEMETRY=0 in your shell.
-	Thanks for your help!
+ You can OPT OUT and disable telemetry collection by setting the
+ environment variable SAM_CLI_TELEMETRY=0 in your shell.
+ Thanks for your help!
 
-	Learn More: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-telemetry.html
+ Learn More: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-telemetry.html
 
 
 You can preselect a particular runtime or package type when using the `sam init` experience.
 Call `sam init --help` to learn more.
 
 Which template source would you like to use?
-	1 - AWS Quick Start Templates
-	2 - Custom Template Location
+ 1 - AWS Quick Start Templates
+ 2 - Custom Template Location
 Choice: 1
 
 Choose an AWS Quick Start application template
-	1 - Hello World Example
-	2 - Multi-step workflow
-	3 - Serverless API
-	4 - Scheduled task
-	5 - Standalone function
-	6 - Data processing
-	7 - Infrastructure event management
-	8 - Machine Learning
+ 1 - Hello World Example
+ 2 - Multi-step workflow
+ 3 - Serverless API
+ 4 - Scheduled task
+ 5 - Standalone function
+ 6 - Data processing
+ 7 - Infrastructure event management
+ 8 - Machine Learning
 Template: 1
 
 Use the most popular runtime and package type? (Python and zip) [y/N]: y
@@ -132,7 +132,7 @@ albamolina@Albas-Air ~ % ls
 sam-app
 albamolina@Albas-Air ~ % cd sam-app 
 albamolina@Albas-Air sam-app % ls
-README.md	__init__.py	events		hello_world	template.yaml	tests
+README.md __init__.py events  hello_world template.yaml tests
 albamolina@Albas-Air sam-app % code .
 albamolina@Albas-Air sam-app % 
 
