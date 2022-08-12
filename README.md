@@ -135,5 +135,6 @@ albamolina@Albas-Air sam-app % ls
 README.md __init__.py events  hello_world template.yaml tests
 albamolina@Albas-Air sam-app % code .
 albamolina@Albas-Air sam-app % 
-
 ```
+
+Note: [sam-app](sam-app/hello_world/app.py)  && [template.yml](sam-app/template.yaml) it is the `same` as what I already did with serverless
