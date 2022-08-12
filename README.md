@@ -138,3 +138,17 @@ albamolina@Albas-Air sam-app %
 ```
 
 Note: [sam-app](sam-app/hello_world/app.py)  && [template.yml](sam-app/template.yaml) it is the `same` as what I already did with serverless
+
+_Now Build and Run the Application_:
+
+```bin/bash
+sam build
+```
+
+_Invoke Function Locally_:
+
+```bin/bash
+# make sure you have docker running in the background first
+sam local invoke
+```
+![run-function-locally](/imgs/05_run_locally.png)
