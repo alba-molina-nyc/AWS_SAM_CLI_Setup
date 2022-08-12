@@ -11,3 +11,7 @@
 ![install_AWS_CLI](/imgs/02_configuring_AWS.png)
 
 ## Install Docker
+
+[download Docker](https://docs.docker.com/desktop/install/mac-install/)
+
+![download Docker](/imgs/03_setup_docker.png)
