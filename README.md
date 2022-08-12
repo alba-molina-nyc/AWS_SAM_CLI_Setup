@@ -151,4 +151,38 @@ _Invoke Function Locally_:
 # make sure you have docker running in the background first
 sam local invoke
 ```
+
 ![run-function-locally](/imgs/05_run_locally.png)
+
+---
+
+### Deploying sam-app to cloud
+
+```bin/bash
+albamolina@Albas-Air sam-app % sam deploy --guided
+Deploy this changeset? [y/N]: y
+```
+
+![deploy sam app](imgs/06_deploy_sam.png)
+
+the deploy command takes all the deployment artifacts in sam build command did before && packages all app everything and sends to amazon S3. Creates a packet and puts it there.
+
+Once that is done the AWS cloud formation then install everything
+
+this is where our command lives: 
+https://37uy5oiwyk.execute-api.us-east-1.amazonaws.com/Prod/hello/
+
+the event is passing 'hello' to our "GET" and it calls the lambda function to return the response
+
+![deploy_response](imgs/07_response.png)
+
+or can test for the message using the CLI to see if you hit the API like this: 
+
+```bin/bash
+albamolina@Albas-Air sam-app % curl https://37uy5oiwyk.execute-api.us-east-1.amazonaws.com/Prod/hello/
+{"message": "hello world"}%                                                                                                                        
+albamolina@Albas-Air sam-app % 
+```
+
+![check for lambda in aws console](imgs/08_lambda_console.png)
+![test lambda in aws console](imgs/09_lambda_test_aws.png)
