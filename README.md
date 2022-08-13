@@ -156,7 +156,7 @@ sam local invoke
 
 ---
 
-### Deploying sam-app to cloud
+### Deploying sam-app to AWS Cloud
 
 ```bin/bash
 albamolina@Albas-Air sam-app % sam deploy --guided
@@ -169,14 +169,14 @@ the deploy command takes all the deployment artifacts in sam build command did b
 
 Once that is done the AWS cloud formation then install everything
 
-this is where our command lives: 
-https://37uy5oiwyk.execute-api.us-east-1.amazonaws.com/Prod/hello/
+this is where our command lives:
+<https://37uy5oiwyk.execute-api.us-east-1.amazonaws.com/Prod/hello/>
 
 the event is passing 'hello' to our "GET" and it calls the lambda function to return the response
 
 ![deploy_response](imgs/07_response.png)
 
-or can test for the message using the CLI to see if you hit the API like this: 
+or can test for the message using the CLI to see if you hit the API like this:
 
 ```bin/bash
 albamolina@Albas-Air sam-app % curl https://37uy5oiwyk.execute-api.us-east-1.amazonaws.com/Prod/hello/
@@ -186,3 +186,31 @@ albamolina@Albas-Air sam-app %
 
 ![check for lambda in aws console](imgs/08_lambda_console.png)
 ![test lambda in aws console](imgs/09_lambda_test_aws.png)
+
+---
+
+### Deploying Locally
+
+```bin/bash
+sam build
+sam local start-api
+```
+
+---
+
+### Invoking Lambda Function Directly
+
+```bin/bash
+sam local invoke "HelloWorldFunction"```
+
+---
+
+###  Deleting the Stack
+
+```bin/bash
+albamolina@Albas-Air sam-app % aws cloudformation delete-stack --stack-name sam-app --region us-east-1
+
+aws cloudformation delete-stack --stack-name app_name --region region_hosted_app_under
+
+
+```
